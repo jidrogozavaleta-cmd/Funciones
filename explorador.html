@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Explorador · Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/explorador.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html">Inicio</a
+        ><a href="explorador.html" aria-current="page">Explorador</a
+        ><a href="que-es.html">¿Qué es?</a><a href="lineal.html">Lineal</a
+        ><a href="cuadratica.html">Cuadrática</a><a href="repaso.html">Repaso</a
+        ><a href="videos.html">Videos</a><a href="ejercicios.html">Ejercicios</a>
+      </div>
+    </nav>
+
+    <header class="band hero paper" id="explorador">
+      <div class="wrap">
+        <div>
+          <h1>Funciones: mira cómo se mueven</h1>
+          <p class="lead">
+            Mueve los deslizadores y observa cómo cambia la gráfica. Después lee la teoría, mira los
+            videos y resuelve los ejercicios: la página te corrige al instante.
+          </p>
+          <p class="note">Prueba: pon m en 0, ¿qué pasa con la recta?</p>
+        </div>
+        <div class="board">
+          <div class="tabs" role="group" aria-label="Tipo de función">
+            <button id="tL" aria-pressed="true">Lineal</button
+            ><button id="tQ" aria-pressed="false">Cuadrática</button>
+          </div>
+          <div class="formula" id="hF">f(x) = x + 1</div>
+          <div class="fig"><canvas id="hero"></canvas></div>
+          <div class="sliders" id="hS"></div>
+          <div class="readout" id="hR"></div>
+        </div>
+      </div>
+      <div class="pager">
+        <a href="index.html">← Inicio</a
+        ><a class="next" href="que-es.html">¿Qué es una función? →</a>
+      </div>
+    </header>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+
+    <!-- Scripts de esta página -->
+    <script src="js/utilidades.js"></script>
+    <script src="js/graficas.js"></script>
+    <script src="js/explorador.js"></script>
+  </body>
+</html>

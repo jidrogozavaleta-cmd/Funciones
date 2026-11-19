@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>¿Qué es una función? · Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/teoria.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html">Inicio</a><a href="explorador.html">Explorador</a
+        ><a href="que-es.html" aria-current="page">¿Qué es?</a><a href="lineal.html">Lineal</a
+        ><a href="cuadratica.html">Cuadrática</a><a href="repaso.html">Repaso</a
+        ><a href="videos.html">Videos</a><a href="ejercicios.html">Ejercicios</a>
+      </div>
+    </nav>
+
+    <section class="band" id="que-es">
+      <div class="wrap">
+        <h2>¿Qué es una función?</h2>
+        <p class="def">
+          Una <b>función</b> es una regla que a cada valor de entrada <b>x</b> le asigna
+          <b>un único</b> valor de salida <b>y = f(x)</b>. Piensa en una máquina: entra un número,
+          la máquina hace siempre la misma operación y sale un solo resultado.
+        </p>
+        <div class="cols">
+          <div class="box key">
+            <h3>La máquina de funciones</h3>
+            <p>Escribe un valor de x y mira lo que sale de f(x) = 2x + 3.</p>
+            <div class="machine">
+              <label for="mx">x =</label
+              ><input class="ans" id="mx" type="text" inputmode="decimal" value="4" /><span
+                class="gear"
+                >× 2, luego + 3</span
+              ><span aria-hidden="true">→</span><span class="out" id="my">11</span>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Palabras clave</h3>
+            <p>
+              <b>Dominio:</b> todos los valores que puede tomar x.<br /><b>Rango (recorrido):</b>
+              todos los valores que toma y.<br /><b>Variable independiente:</b> x.
+              <b>Dependiente:</b> y, porque depende de x.
+            </p>
+          </div>
+          <div class="box">
+            <h3>¿Cómo sé si es función?</h3>
+            <p>
+              <b>Prueba de la recta vertical:</b> si una recta vertical corta la gráfica en más de
+              un punto, no es función. En pares ordenados: si un mismo x aparece con dos y
+              distintos, no es función.
+            </p>
+            <p>
+              {(1,2), (2,4), (3,6)} sí es función.<br />{(1,2), (1,5), (3,6)} no lo es: x = 1 tiene
+              dos salidas.
+            </p>
+          </div>
+        </div>
+        <h3 style="margin-top: 32px">Notación y evaluación</h3>
+        <p class="def">
+          Escribimos <b>f(x)</b> (se lee «f de x») para indicar el valor de la función f cuando la
+          entrada es x. <b>Evaluar</b> es reemplazar x por un número. Si f(x) = x² − 1, entonces
+          f(3) = 3² − 1 = 8 y f(−2) = (−2)² − 1 = 3. Las letras pueden cambiar: g(t), h(n) o C(x)
+          también son funciones.
+        </p>
+        <div class="cols">
+          <div class="box">
+            <h3>4 formas de representar una función</h3>
+            <p>
+              <b>1. Verbal:</b> «el costo es S/ 2 por cuaderno».<br /><b>2. Fórmula:</b> C(x) =
+              2x.<br /><b>3. Tabla de valores:</b>
+            </p>
+            <table>
+              <tr>
+                <th>x (cuadernos)</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th>C(x) soles</th>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+              </tr>
+            </table>
+            <p><b>4. Gráfica:</b> los puntos (1,2), (2,4), (3,6)… en el plano cartesiano.</p>
+          </div>
+          <div class="box">
+            <h3>Dominio y rango con ejemplos</h3>
+            <table>
+              <tr>
+                <th>Función</th>
+                <th>Dominio</th>
+                <th>Rango</th>
+              </tr>
+              <tr>
+                <td>f(x) = 3x − 2</td>
+                <td>ℝ</td>
+                <td>ℝ</td>
+              </tr>
+              <tr>
+                <td>f(x) = x²</td>
+                <td>ℝ</td>
+                <td>y ≥ 0</td>
+              </tr>
+              <tr>
+                <td>f(x) = −x² + 4</td>
+                <td>ℝ</td>
+                <td>y ≤ 4</td>
+              </tr>
+              <tr>
+                <td>f(x) = 5</td>
+                <td>ℝ</td>
+                <td>{5}</td>
+              </tr>
+            </table>
+            <p>
+              En problemas reales el dominio se limita: no se compran −3 cuadernos ni 2,5 personas.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Tipos de funciones que veremos</h3>
+            <p>
+              <b>Constante:</b> f(x) = k. Recta horizontal.<br /><b>Identidad:</b> f(x) = x.
+              Diagonal que pasa por el origen.<br /><b>Lineal (de proporcionalidad):</b> f(x) = mx.
+              Pasa por (0,0).<br /><b>Afín:</b> f(x) = mx + b. Recta que corta el eje y en b. En
+              muchos libros también se llama lineal.<br /><b>Cuadrática:</b> f(x) = ax² + bx + c.
+              Parábola.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Un poco de historia</h3>
+            <p>
+              René <b>Descartes</b> (siglo XVII) unió álgebra y geometría con el plano cartesiano,
+              lo que permitió dibujar ecuaciones. Gottfried <b>Leibniz</b> usó por primera vez la
+              palabra «función» hacia 1692, y Leonhard <b>Euler</b> introdujo la notación
+              <b>f(x)</b> en 1734. Hoy las funciones describen desde el crecimiento de una población
+              hasta la trayectoria de un satélite.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pager">
+        <a href="explorador.html">← Explorador</a
+        ><a class="next" href="lineal.html">Función lineal →</a>
+      </div>
+    </section>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+
+    <!-- Scripts de esta página -->
+    <script src="js/utilidades.js"></script>
+    <script src="js/maquina.js"></script>
+  </body>
+</html>

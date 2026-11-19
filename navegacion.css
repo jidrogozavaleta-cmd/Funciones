@@ -1,0 +1,65 @@
+/* NAVEGACIÓN
+   Barra de menú superior y botones Anterior / Siguiente. */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--blueBg);
+  color: #fff;
+}
+nav .wrap {
+  display: flex;
+  gap: 4px 18px;
+  align-items: center;
+  padding: 8px max(5vw, 16px);
+  flex-wrap: wrap;
+}
+nav b {
+  font-family: Lexend;
+  margin-right: auto;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 4px;
+  font-size: 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  nav {
+    position: static;
+  }
+}
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+}
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 32px auto 0;
+}
+.pager a {
+  font:
+    600 15px Lexend,
+    sans-serif;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 18px;
+  border-radius: 10px;
+  border: 1.5px solid var(--blue);
+  text-decoration: none;
+}
+.pager a.next {
+  background: var(--blue);
+  color: var(--bg);
+  margin-left: auto;
+}

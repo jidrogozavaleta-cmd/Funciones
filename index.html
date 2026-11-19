@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Funciones: aprende y practica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/portada.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html" aria-current="page">Inicio</a
+        ><a href="explorador.html">Explorador</a><a href="que-es.html">¿Qué es?</a
+        ><a href="lineal.html">Lineal</a><a href="cuadratica.html">Cuadrática</a
+        ><a href="repaso.html">Repaso</a><a href="videos.html">Videos</a
+        ><a href="ejercicios.html">Ejercicios</a>
+      </div>
+    </nav>
+
+    <section class="band cover paper" id="inicio">
+      <div class="wrap">
+        <div>
+          <h1>Funciones</h1>
+          <p class="lead" style="font-size: 20px; color: var(--soft); max-width: 36ch">
+            Aprende funciones lineales y cuadráticas: lee la teoría, mueve las gráficas, mira los
+            videos y practica con ejercicios que se corrigen solos.
+          </p>
+          <p class="note">Elige por dónde empezar ↓</p>
+        </div>
+        <svg
+          class="art"
+          viewBox="0 0 480 360"
+          role="img"
+          aria-label="Una recta y una parábola sobre un plano cartesiano"
+        >
+          <rect
+            x="0"
+            y="0"
+            width="480"
+            height="360"
+            rx="20"
+            fill="var(--card)"
+            stroke="var(--line)"
+          />
+          <g stroke="var(--grid)" stroke-width="1">
+            <path
+              d="M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360M0 40H480M0 80H480M0 120H480M0 160H480M0 240H480M0 280H480M0 320H480"
+            />
+          </g>
+          <g stroke="var(--soft)" stroke-width="2"><path d="M240 10V350M10 200H470" /></g>
+          <path
+            d="M120 40 C 170 400, 310 400, 360 40"
+            fill="none"
+            stroke="var(--red)"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+          <path
+            d="M60 330 L 440 70"
+            fill="none"
+            stroke="var(--blue)"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+          <circle cx="240" cy="310" r="8" fill="var(--red)" />
+          <circle cx="240" cy="207" r="8" fill="var(--blue)" />
+          <text
+            x="260"
+            y="344"
+            paint-order="stroke"
+            stroke="var(--card)"
+            stroke-width="6"
+            font-family="Kalam,cursive"
+            font-size="24"
+            fill="var(--red)"
+          >
+            vértice
+          </text>
+          <text
+            x="22"
+            y="292"
+            paint-order="stroke"
+            stroke="var(--card)"
+            stroke-width="6"
+            font-family="Lexend,sans-serif"
+            font-weight="700"
+            font-size="22"
+            fill="var(--blue)"
+          >
+            y = mx + b
+          </text>
+          <text
+            x="150"
+            y="60"
+            paint-order="stroke"
+            stroke="var(--card)"
+            stroke-width="6"
+            font-family="Lexend,sans-serif"
+            font-weight="700"
+            font-size="22"
+            fill="var(--red)"
+          >
+            y = ax² + bx + c
+          </text>
+        </svg>
+      </div>
+      <div style="max-width: 1240px; margin: 0 auto">
+        <div class="menu" style="margin-top: 32px">
+          <a class="card" href="explorador.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 26V4M4 26h22" />
+                <path d="M6 22c4-14 10-14 14 0" /></svg></span
+            ><span
+              ><b>Explorador de gráficas</b
+              ><small>Mueve m, b o a, b, c y mira la gráfica cambiar</small></span
+            ></a
+          ><a class="card" href="que-es.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="5" y="8" width="20" height="14" rx="3" />
+                <path d="M1 15h4M25 15h4" /></svg></span
+            ><span
+              ><b>¿Qué es una función?</b
+              ><small>Definición, notación, dominio, rango y tipos</small></span
+            ></a
+          ><a class="card" href="lineal.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 26V4M4 26h22" />
+                <path d="M6 22L26 6" /></svg></span
+            ><span
+              ><b>Función lineal</b
+              ><small>Pendiente, ecuación de la recta y aplicaciones</small></span
+            ></a
+          ><a class="card" href="cuadratica.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 26V4M4 26h22" />
+                <path d="M7 6c3 22 13 22 16 0" /></svg></span
+            ><span
+              ><b>Función cuadrática</b
+              ><small>Parábola, vértice, raíces y optimización</small></span
+            ></a
+          ><a class="card" href="repaso.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 4h14l4 4v18H6z" />
+                <path d="M10 13h10M10 18h10" /></svg></span
+            ><span><b>Repaso</b><small>Errores comunes y glosario</small></span></a
+          ><a class="card" href="videos.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="7" width="24" height="16" rx="3" />
+                <path d="M13 11l6 4-6 4z" /></svg></span
+            ><span><b>Videos</b><small>Explicaciones para reforzar cada tema</small></span></a
+          ><a class="card hot" href="ejercicios.html"
+            ><span class="ic"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 16l6 6L24 8" /></svg></span
+            ><span
+              ><b>Ejercicios</b><small>13 ejercicios con corrección al instante</small></span
+            ></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+  </body>
+</html>

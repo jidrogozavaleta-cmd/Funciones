@@ -1,0 +1,33 @@
+PÁGINA DE FUNCIONES - ESTRUCTURA
+
+index.html ........... Portada con los botones
+explorador.html ...... Explorador de gráficas
+que-es.html .......... ¿Qué es una función?
+lineal.html .......... Función lineal
+cuadratica.html ...... Función cuadrática
+repaso.html .......... Errores comunes y glosario
+videos.html .......... Videos
+ejercicios.html ...... Ejercicios con corrección
+
+css/
+  base.css ........... Colores, letras y estructura general (todas las páginas)
+  navegacion.css ..... Menú superior y botones Anterior/Siguiente (todas)
+  componentes.css .... Botones, fórmulas, deslizadores, gráficas (todas)
+  portada.css ........ Solo index.html
+  explorador.css ..... Solo explorador.html
+  teoria.css ......... que-es, lineal, cuadratica y repaso
+  videos.css ......... Solo videos.html
+  ejercicios.css ..... Solo ejercicios.html
+
+js/
+  utilidades.js ...... Funciones auxiliares (las usan los demás scripts: va primero)
+  graficas.js ........ Dibuja el plano cartesiano (explorador y ejercicios)
+  explorador.js ...... Deslizadores del explorador
+  maquina.js ......... Máquina de funciones (que-es.html)
+  videos.js .......... Lista de videos (videos.html y ejercicios.html)
+  ejercicios.js ...... Plantillas de ejercicios y corrección
+
+Para cambiar colores: css/base.css, al inicio (:root).
+Para agregar un video: js/videos.js, lista V.
+Para editar ejercicios: js/ejercicios.js, lista T.
+Mantén las carpetas css y js junto a los archivos .html.

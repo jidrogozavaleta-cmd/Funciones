@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ejercicios · Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/ejercicios.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html">Inicio</a><a href="explorador.html">Explorador</a
+        ><a href="que-es.html">¿Qué es?</a><a href="lineal.html">Lineal</a
+        ><a href="cuadratica.html">Cuadrática</a><a href="repaso.html">Repaso</a
+        ><a href="videos.html">Videos</a
+        ><a href="ejercicios.html" aria-current="page">Ejercicios</a>
+      </div>
+    </nav>
+
+    <section class="band" id="ejercicios">
+      <div class="wrap">
+        <h2>Ejercicios con corrección al instante</h2>
+        <p class="def">
+          Escribe tu respuesta y pulsa <b>Comprobar</b> (o Enter). Puedes usar fracciones como
+          <b>3/4</b> o decimales como <b>0,5</b>. Si te equivocas, inténtalo de nuevo, pide una
+          pista o mira la solución.
+        </p>
+        <div class="score" aria-live="polite">
+          <b id="sc">Correctas: 0 de 13</b>
+          <div class="bar"><i id="scb"></i></div>
+          <span id="sc2">Al primer intento: 0</span
+          ><button class="btn main" id="regen">Nuevos ejercicios</button>
+        </div>
+        <div class="exs" id="exs"></div>
+      </div>
+      <div class="pager">
+        <a href="videos.html">← Videos</a><a class="next" href="index.html">Volver al inicio</a>
+      </div>
+    </section>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+
+    <!-- Scripts de esta página -->
+    <script src="js/utilidades.js"></script>
+    <script src="js/graficas.js"></script>
+    <script src="js/videos.js"></script>
+    <script src="js/ejercicios.js"></script>
+  </body>
+</html>

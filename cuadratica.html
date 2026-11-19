@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Función cuadrática · Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/teoria.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html">Inicio</a><a href="explorador.html">Explorador</a
+        ><a href="que-es.html">¿Qué es?</a><a href="lineal.html">Lineal</a
+        ><a href="cuadratica.html" aria-current="page">Cuadrática</a><a href="repaso.html">Repaso</a
+        ><a href="videos.html">Videos</a><a href="ejercicios.html">Ejercicios</a>
+      </div>
+    </nav>
+
+    <section class="band" id="cuadratica">
+      <div class="wrap">
+        <h2>Función cuadrática: f(x) = ax² + bx + c</h2>
+        <p class="def">
+          Con a ≠ 0. Su gráfica es una <b>parábola</b>. Si <b>a &gt; 0</b> abre hacia arriba y el
+          vértice es un <b>mínimo</b>; si <b>a &lt; 0</b> abre hacia abajo y el vértice es un
+          <b>máximo</b>. Cuanto más grande es |a|, más cerrada es la parábola.
+        </p>
+        <div class="cols">
+          <div class="box key">
+            <h3>El vértice</h3>
+            <p class="formula">x<sub>v</sub> = −b / (2a)</p>
+            <p>
+              Luego y<sub>v</sub> = f(x<sub>v</sub>). El <b>eje de simetría</b> es la recta vertical
+              x = x<sub>v</sub>. El corte con el eje y es (0, c).
+            </p>
+          </div>
+          <div class="box">
+            <h3>Raíces y discriminante</h3>
+            <p class="formula">x = (−b ± √Δ) / (2a)</p>
+            <p>Con Δ = b² − 4ac:</p>
+            <table>
+              <tr>
+                <td>Δ &gt; 0</td>
+                <td>dos raíces reales</td>
+              </tr>
+              <tr>
+                <td>Δ = 0</td>
+                <td>una raíz (doble)</td>
+              </tr>
+              <tr>
+                <td>Δ &lt; 0</td>
+                <td>no corta el eje x</td>
+              </tr>
+            </table>
+          </div>
+          <div class="box">
+            <h3>Ejemplo resuelto</h3>
+            <p>f(x) = x² − 4x + 3</p>
+            <p>
+              x<sub>v</sub> = 4/2 = 2; y<sub>v</sub> = 4 − 8 + 3 = −1 → <b>V(2, −1)</b>, mínimo.<br />Δ
+              = 16 − 12 = 4 &gt; 0 → raíces x = 1 y x = 3, porque x² − 4x + 3 = (x − 1)(x − 3).<br />Rango:
+              y ≥ −1.
+            </p>
+          </div>
+          <div class="box">
+            <h3>En la vida real</h3>
+            <p>
+              Una pelota lanzada hacia arriba sigue h(t) = −5t² + 20t. El vértice t = 2 s da la
+              altura máxima: h(2) = 20 m. También aparece en áreas, antenas parabólicas y puentes.
+            </p>
+          </div>
+        </div>
+        <div class="cols">
+          <div class="box">
+            <h3>Tres formas de escribirla</h3>
+            <table>
+              <tr>
+                <th>Forma</th>
+                <th>Ecuación</th>
+                <th>Se ve fácil</th>
+              </tr>
+              <tr>
+                <td>General</td>
+                <td>ax² + bx + c</td>
+                <td>corte en y: c</td>
+              </tr>
+              <tr>
+                <td>Canónica (vértice)</td>
+                <td>a(x − h)² + k</td>
+                <td>vértice (h, k)</td>
+              </tr>
+              <tr>
+                <td>Factorizada</td>
+                <td>a(x − x₁)(x − x₂)</td>
+                <td>raíces x₁, x₂</td>
+              </tr>
+            </table>
+            <p>Ej.: x² − 4x + 3 = (x − 2)² − 1 = (x − 1)(x − 3).</p>
+          </div>
+          <div class="box">
+            <h3>Transformaciones de y = x²</h3>
+            <p>
+              <b>y = x² + k:</b> sube k unidades (baja si k &lt; 0).<br /><b>y = (x − h)²:</b> se
+              mueve h unidades a la derecha (a la izquierda si h &lt; 0).<br /><b>y = −x²:</b> se
+              refleja, abre hacia abajo.<br /><b>y = 3x²:</b> más cerrada. <b>y = ⅓x²:</b> más
+              abierta.
+            </p>
+            <p>Pruébalo en el explorador de arriba con la pestaña Cuadrática.</p>
+          </div>
+          <div class="box">
+            <h3>Cómo graficar una parábola</h3>
+            <p>
+              1. Mira el signo de a: hacia dónde abre.<br />2. Calcula el vértice V(xᵥ, yᵥ).<br />3.
+              Marca el corte con el eje y: (0, c).<br />4. Halla las raíces si Δ ≥ 0.<br />5. Usa la
+              simetría: el punto (0, c) tiene un «gemelo» en (2xᵥ, c).<br />6. Une los puntos con
+              una curva suave.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Crece y decrece</h3>
+            <p>
+              Si a &gt; 0, la función <b>decrece</b> para x &lt; xᵥ y <b>crece</b> para x &gt; xᵥ.
+              Si a &lt; 0 es al revés. El vértice marca el cambio. Ej.: f(x) = x² − 6x + 5 decrece
+              en (−∞, 3) y crece en (3, +∞).
+            </p>
+          </div>
+          <div class="box">
+            <h3>Problema de optimización</h3>
+            <p>
+              Con 40 m de cerca quieres un corral rectangular de área máxima. Si un lado mide x, el
+              otro mide 20 − x, y el área es A(x) = x(20 − x) = −x² + 20x. El vértice está en x =
+              −20/(2·(−1)) = 10. El área máxima es A(10) = <b>100 m²</b>: un cuadrado de 10 × 10.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Ecuación vs. función</h3>
+            <p>
+              La <b>función</b> f(x) = x² − 9 es toda la parábola. La <b>ecuación</b> x² − 9 = 0
+              pregunta solo dónde f(x) vale cero: x = 3 y x = −3. Las soluciones de la ecuación son
+              los cortes de la parábola con el eje x.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pager">
+        <a href="lineal.html">← Función lineal</a><a class="next" href="repaso.html">Repaso →</a>
+      </div>
+    </section>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+  </body>
+</html>

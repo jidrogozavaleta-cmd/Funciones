@@ -1,0 +1,182 @@
+/* EJERCICIOS (ejercicios.html)
+   Marcador, tarjetas, opciones y mensajes de corrección. */
+
+.score {
+  position: sticky;
+  top: 60px;
+  z-index: 4;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  align-items: center;
+  margin: 14px 0 22px;
+}
+@media (max-width: 900px) {
+  .score {
+    top: 0;
+  }
+}
+.bar {
+  flex: 1 1 180px;
+  height: 12px;
+  background: var(--grid);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--ok);
+  transition: width 0.4s;
+}
+.exs {
+  display: grid;
+  gap: 18px;
+  max-width: 900px;
+}
+.ex {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: border-color 0.2s;
+}
+.ex.good {
+  border-color: var(--ok);
+  background: linear-gradient(var(--okBg), var(--card) 70%);
+}
+.ex.bad {
+  border-color: var(--red);
+}
+.ex header {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.ex header b {
+  font: 700 20px Lexend;
+}
+.chip {
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background: var(--grid);
+  color: var(--soft);
+}
+.q {
+  font-size: 18px;
+}
+.q .m {
+  font: 700 1.05em Lexend;
+  color: var(--blue);
+  white-space: nowrap;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+.row label {
+  font-weight: 700;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.opts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.opt {
+  font: 16px "Atkinson Hyperlegible";
+  text-align: left;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+.opt.right {
+  border-color: var(--ok);
+  background: var(--okBg);
+}
+.opt.wrong {
+  border-color: var(--red);
+  background: var(--noBg);
+}
+.fb {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: none;
+}
+.fb.show {
+  display: block;
+}
+.fb.ok {
+  background: var(--okBg);
+  color: var(--ok);
+}
+.fb.no {
+  background: var(--noBg);
+  color: var(--red);
+}
+.fb p {
+  margin: 0;
+  color: var(--ink);
+}
+.fb strong {
+  display: block;
+}
+.link {
+  background: none;
+  border: 0;
+  color: var(--blue);
+  text-decoration: underline;
+  font: 15px "Atkinson Hyperlegible";
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0 6px;
+}
+.sol {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-left: 4px solid var(--blue);
+  background: var(--paper);
+}
+.sol.show {
+  display: block;
+}
+.live {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.live span {
+  color: var(--red);
+}
+.live span.y {
+  color: var(--ok);
+}
+.ex .fig {
+  min-height: 400px;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}

@@ -1,0 +1,45 @@
+/* EXPLORADOR (explorador.html)
+   Tarjeta con pestañas Lineal / Cuadrática y lecturas. */
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: 32px;
+  align-items: center;
+}
+.hero p.lead {
+  font-size: 19px;
+  color: var(--soft);
+  max-width: 34ch;
+}
+.board {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 10px 30px -18px rgba(20, 40, 100, 0.5);
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.readout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 15px;
+  color: var(--soft);
+  margin-top: 6px;
+}
+.readout b {
+  color: var(--ink);
+}
+@media (max-width: 760px) {
+  .hero .wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero .fig {
+    min-height: 300px;
+  }
+}

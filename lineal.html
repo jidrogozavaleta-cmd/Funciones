@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Función lineal · Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos: comunes primero, luego los de esta página -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navegacion.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
+    <link rel="stylesheet" href="css/teoria.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <b>Funciones</b><a href="index.html">Inicio</a><a href="explorador.html">Explorador</a
+        ><a href="que-es.html">¿Qué es?</a><a href="lineal.html" aria-current="page">Lineal</a
+        ><a href="cuadratica.html">Cuadrática</a><a href="repaso.html">Repaso</a
+        ><a href="videos.html">Videos</a><a href="ejercicios.html">Ejercicios</a>
+      </div>
+    </nav>
+
+    <section class="band paper" id="lineal">
+      <div class="wrap">
+        <h2>Función lineal: f(x) = mx + b</h2>
+        <p class="def">
+          Su gráfica es una <b>recta</b>. Crece o decrece siempre al mismo ritmo: ese ritmo es la
+          <b>pendiente m</b>. El número <b>b</b> es la <b>ordenada al origen</b>, el punto donde la
+          recta corta al eje y, en (0, b).
+        </p>
+        <div class="cols">
+          <div class="box key">
+            <h3>La pendiente</h3>
+            <p>Con dos puntos (x₁, y₁) y (x₂, y₂):</p>
+            <p class="formula">m = (y₂ − y₁) / (x₂ − x₁)</p>
+            <p>Significa cuánto sube (o baja) y cuando x avanza 1.</p>
+          </div>
+          <div class="box">
+            <h3>Según el signo de m</h3>
+            <table>
+              <tr>
+                <th>m</th>
+                <th>La recta es</th>
+              </tr>
+              <tr>
+                <td>m &gt; 0</td>
+                <td>creciente ↗</td>
+              </tr>
+              <tr>
+                <td>m &lt; 0</td>
+                <td>decreciente ↘</td>
+              </tr>
+              <tr>
+                <td>m = 0</td>
+                <td>constante (horizontal)</td>
+              </tr>
+            </table>
+            <p>Dominio y rango: todos los reales (si m ≠ 0).</p>
+          </div>
+          <div class="box">
+            <h3>Ejemplo resuelto</h3>
+            <p>Recta que pasa por (1, 3) y (3, 7):</p>
+            <p>
+              m = (7 − 3)/(3 − 1) = 4/2 = <b>2</b><br />3 = 2·1 + b → b = <b>1</b><br />Entonces
+              <b>f(x) = 2x + 1</b>.
+            </p>
+            <p>Corta el eje x cuando 2x + 1 = 0 → x = −1/2.</p>
+          </div>
+          <div class="box">
+            <h3>En la vida real</h3>
+            <p>
+              Un taxi cobra S/ 4 al subir y S/ 2 por kilómetro: <b>C(x) = 2x + 4</b>. Un viaje de 6
+              km cuesta 2·6 + 4 = S/ 16. La pendiente (2) es el precio por km y b (4) el costo fijo.
+            </p>
+          </div>
+        </div>
+        <div class="cols">
+          <div class="box">
+            <h3>Cómo graficar una recta</h3>
+            <p>
+              <b>Método 1, tabla:</b> da dos o tres valores a x, calcula y, ubica los puntos y
+              únelos.<br /><b>Método 2, pendiente y ordenada:</b> marca (0, b). Desde ahí, si m =
+              2/3, avanza 3 a la derecha y sube 2. Une los puntos.<br /><b>Método 3, cortes:</b>
+              corte en y: (0, b). Corte en x: resuelve mx + b = 0.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Formas de la ecuación de la recta</h3>
+            <table>
+              <tr>
+                <th>Forma</th>
+                <th>Ecuación</th>
+              </tr>
+              <tr>
+                <td>Pendiente-ordenada</td>
+                <td>y = mx + b</td>
+              </tr>
+              <tr>
+                <td>Punto-pendiente</td>
+                <td>y − y₁ = m(x − x₁)</td>
+              </tr>
+              <tr>
+                <td>General</td>
+                <td>Ax + By + C = 0</td>
+              </tr>
+            </table>
+            <p>De la forma general: m = −A/B. Ejemplo: 2x + 4y − 8 = 0 → y = −½x + 2.</p>
+          </div>
+          <div class="box">
+            <h3>Rectas paralelas y perpendiculares</h3>
+            <p>
+              <b>Paralelas:</b> tienen la misma pendiente (m₁ = m₂). Ej.: y = 3x + 1 y y = 3x −
+              5.<br /><b>Perpendiculares:</b> sus pendientes multiplicadas dan −1 (m₁ · m₂ = −1).
+              Ej.: y = 2x y y = −½x + 3.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Ejemplo con punto-pendiente</h3>
+            <p>
+              Recta con m = −3 que pasa por (2, 5):<br />y − 5 = −3(x − 2)<br />y − 5 = −3x + 6<br /><b
+                >y = −3x + 11</b
+              >.<br />Comprobación: −3·2 + 11 = 5 ✓
+            </p>
+          </div>
+          <div class="box">
+            <h3>Intersección de dos rectas</h3>
+            <p>
+              Donde dos rectas se cruzan, tienen el mismo x y el mismo y. Iguala: 2x + 1 = −x + 7 →
+              3x = 6 → x = 2, y = 5. Se cortan en <b>(2, 5)</b>. Así se resuelven también los
+              sistemas de ecuaciones.
+            </p>
+          </div>
+          <div class="box">
+            <h3>Más aplicaciones</h3>
+            <p>
+              <b>Celular:</b> plan de S/ 30 + S/ 0,20 por minuto extra: C(x) = 0,2x + 30.<br /><b
+                >Velocidad constante:</b
+              >
+              un bus a 60 km/h recorre d(t) = 60t.<br /><b>Temperatura:</b> °F = 1,8·°C + 32.<br /><b
+                >Ahorro:</b
+              >
+              tienes S/ 50 y ahorras S/ 15 por semana: A(s) = 15s + 50.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pager">
+        <a href="que-es.html">← ¿Qué es una función?</a
+        ><a class="next" href="cuadratica.html">Función cuadrática →</a>
+      </div>
+    </section>
+
+    <footer class="band paper">
+      <div class="wrap">
+        Página educativa de Matemática para secundaria: funciones lineales y cuadráticas. Los
+        ejercicios cambian cada vez que pulsas «Nuevos ejercicios».
+      </div>
+    </footer>
+  </body>
+</html>

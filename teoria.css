@@ -1,0 +1,52 @@
+/* TEORÍA (que-es, lineal, cuadratica, repaso)
+   Columnas de cajas, tablas y la máquina de funciones. */
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+.box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.box.key {
+  border-left: 5px solid var(--blue);
+}
+.machine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font:
+    700 18px Lexend,
+    sans-serif;
+}
+.machine .gear {
+  background: var(--blueBg);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+}
+.out {
+  min-width: 70px;
+  padding: 10px 14px;
+  border: 2px dashed var(--red);
+  border-radius: 10px;
+  color: var(--red);
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+}
+td,
+th {
+  border-bottom: 1px solid var(--line);
+  padding: 8px;
+  text-align: left;
+}
